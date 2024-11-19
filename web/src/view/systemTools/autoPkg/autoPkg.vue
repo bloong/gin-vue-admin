@@ -17,15 +17,9 @@
       </div>
       <el-table :data="tableData">
         <el-table-column
-          align="left"
-<<<<<<< HEAD
-          label="ID"
-          width="60"
-=======
+          align="left" 
           label="id"
           width="120"
->>>>>>> origin/main
-          prop="ID"
         />
         <el-table-column
           align="left"
