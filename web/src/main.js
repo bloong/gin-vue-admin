@@ -13,12 +13,7 @@ import run from '@/core/gin-vue-admin.js'
 import auth from '@/directive/auth'
 import { store } from '@/pinia'
 import App from './App.vue'
-<<<<<<< HEAD
 import i18n from './i18n' // added by mohamed hassan to multilangauge
-//消除警告
-=======
-// 消除警告
->>>>>>> origin/main
 import 'default-passive-events'
 
 const app = createApp(App)
