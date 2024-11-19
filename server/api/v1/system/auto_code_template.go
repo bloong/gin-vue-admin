@@ -112,8 +112,9 @@ func (a *AutoCodeTemplateApi) AddFunc(c *gin.Context) {
 		global.GVA_LOG.Error(global.Translate("sys_auto_code.injectFail"), zap.Error(err))
 		response.FailWithMessage(global.Translate("sys_auto_code.injectFail"), c)
 	} else {
+		response.OkWithMessage(global.Translate("sys_auto_code.injectSuccess"), c)
 		if info.IsPreview {
-			response.OkWithDetailed(tempMap, global.Translate("sys_auto_code.injectSuccess"), c)
+			response.OkWithDetailed(tempMap, "注入成功", c)
 			return
 		}
 		response.OkWithMessage("注入成功", c)

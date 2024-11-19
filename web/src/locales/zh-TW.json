@@ -701,7 +701,6 @@
         "fileName": "文件名稱",
         "fileNameNote": "生成文件的默認名稱(建議為駝峰格式,首字母小寫,如sysXxxXxxx)",
         "generateCode": "生成代碼",
-        "generate": "生成",
         "moveDown": "下移",
         "moveUp": "上移",
         "selectDB": "請選擇數據庫",
@@ -817,17 +816,17 @@
           "display": "展示: ",
           "enumValueValidationError": "枚舉值校驗錯誤",
           "oneToManyNote": "一对多關聯模式下，數據類型會改變為數組，後端表現為json，具體表現為數組模式，是否繼續？",
-          "string": "字串",
+          "string":  "字串",
           "richText": "富文本",
-          "integer": "整數",
+          "integer":  "整數",
           "boolean": "布林",
-          "float": "浮點數",
+          "float":  "浮點數",
           "time": "時間",
-          "enum": "列舉",
+          "enum":  "列舉",
           "singleImage": "單圖",
-          "multipleImages": "多圖",
+          "multipleImages":  "多圖",
           "video": "視頻",
-          "file": "文件",
+          "file":  "文件",
           "array": "數組"
         }
       },
@@ -994,4 +993,4 @@
       "loginAgain": "重新登錄"
     }
   }
-}
+,"showEms":{"OtherApi":{"Test":"test"}}}

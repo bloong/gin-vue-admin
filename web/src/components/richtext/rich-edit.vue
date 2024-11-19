@@ -8,7 +8,7 @@
     <Editor
       v-model="valueHtml"
       class="overflow-y-hidden mt-0.5"
-      style="height: 18rem"
+      style="height: 18rem;"
       :default-config="editorConfig"
       mode="default"
       @onCreated="handleCreated"
@@ -18,69 +18,73 @@
 </template>
 
 <script setup>
-  import '@wangeditor/editor/dist/css/style.css' // 引入 css
 
-  const basePath = import.meta.env.VITE_BASE_API
+import '@wangeditor/editor/dist/css/style.css' // 引入 css
 
-  import { onBeforeUnmount, ref, shallowRef, watch } from 'vue'
-  import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+const basePath = import.meta.env.VITE_BASE_API
 
-  import { ElMessage } from 'element-plus'
-  import { getUrl } from '@/utils/image'
+import { onBeforeUnmount, ref, shallowRef, watch } from 'vue'
+import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
 
-  const emits = defineEmits(['change', 'update:modelValue'])
+import { useUserStore } from '@/pinia/modules/user'
+import { ElMessage } from 'element-plus'
+import { getUrl } from '@/utils/image'
 
-  const change = (editor) => {
-    emits('change', editor)
-    emits('update:modelValue', valueHtml.value)
+const userStore = useUserStore()
+
+const emits = defineEmits(['change', 'update:modelValue'])
+
+const change = (editor) => {
+  emits('change', editor)
+  emits('update:modelValue', valueHtml.value)
+}
+
+const props = defineProps({
+  modelValue: {
+    type: String,
+    default: ''
   }
+})
 
-  const props = defineProps({
-    modelValue: {
-      type: String,
-      default: ''
+const editorRef = shallowRef()
+const valueHtml = ref('')
+
+const toolbarConfig = {}
+const editorConfig = {
+  placeholder: '请输入内容...',
+  MENU_CONF: {}
+}
+editorConfig.MENU_CONF['uploadImage'] = {
+  fieldName: 'file',
+  server: basePath + '/fileUploadAndDownload/upload?noSave=1',
+  customInsert(res, insertFn) {
+    if (res.code === 0) {
+      const urlPath = getUrl(res.data.file.url)
+      insertFn(urlPath, res.data.file.name)
+      return
     }
-  })
-
-  const editorRef = shallowRef()
-  const valueHtml = ref('')
-
-  const toolbarConfig = {}
-  const editorConfig = {
-    placeholder: '请输入内容...',
-    MENU_CONF: {}
+    ElMessage.error(res.msg)
   }
-  editorConfig.MENU_CONF['uploadImage'] = {
-    fieldName: 'file',
-    server: basePath + '/fileUploadAndDownload/upload?noSave=1',
-    customInsert(res, insertFn) {
-      if (res.code === 0) {
-        const urlPath = getUrl(res.data.file.url)
-        insertFn(urlPath, res.data.file.name)
-        return
-      }
-      ElMessage.error(res.msg)
-    }
-  }
+}
 
-  // 组件销毁时，也及时销毁编辑器
-  onBeforeUnmount(() => {
-    const editor = editorRef.value
-    if (editor == null) return
-    editor.destroy()
-  })
+// 组件销毁时，也及时销毁编辑器
+onBeforeUnmount(() => {
+  const editor = editorRef.value
+  if (editor == null) return
+  editor.destroy()
+})
 
-  const handleCreated = (editor) => {
-    editorRef.value = editor
-    valueHtml.value = props.modelValue
-  }
+const handleCreated = (editor) => {
+  editorRef.value = editor
+  valueHtml.value = props.modelValue
+}
 
-  watch(
-    () => props.modelValue,
-    () => {
-      valueHtml.value = props.modelValue
-    }
-  )
+watch(() => props.modelValue, () => {
+  valueHtml.value = props.modelValue
+})
+
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>

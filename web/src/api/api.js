@@ -145,12 +145,14 @@ export const freshCasbin = () => {
   })
 }
 
+
 export const syncApi = () => {
   return service({
     url: '/api/syncApi',
     method: 'get'
   })
 }
+
 
 export const getApiGroups = () => {
   return service({
@@ -166,6 +168,7 @@ export const ignoreApi = (data) => {
     data
   })
 }
+
 
 export const enterSyncApi = (data) => {
   return service({

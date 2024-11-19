@@ -5,4 +5,9 @@ import { useDictionaryStore } from '@/pinia/modules/dictionary'
 
 const store = createPinia()
 
-export { store, useAppStore, useUserStore, useDictionaryStore }
+export {
+  store,
+  useAppStore,
+  useUserStore,
+  useDictionaryStore
+}

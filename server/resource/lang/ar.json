@@ -195,11 +195,13 @@
                 "addMenu": "إضافة قائمة",
                 "addMenuRole": "إضافة علاقة قائمة ودور",
                 "addTemplateMethod": "إضافة طريقة القالب",
+                "addshowEmsPrimaryFreqCtrl": "add一次调频API",
 
                 "autoCode": "شفرة تلقائية",
                 "batchDeleteAnnouncement": "حذف الإعلانات بشكل جماعي",
                 "batchDeleteExportTemplate": "حذف قوالب التصدير بشكل جماعي",
                 "batchDeleteOperationHistory": "حذف تاريخ العمليات بشكل جماعي",
+                "batchshowEmsPrimaryFreqCtrl": "batch一次调频API",
 
                 "breakpointContinue": "استئناف التحميل",
                 "breakpointContinueFinish": "إنهاء استئناف التحميل",
@@ -231,12 +233,14 @@
                 "deleteRollbackRecord": "حذف سجل التراجع",
                 "deleteTemplate": "حذف القالب",
                 "deleteUsers": "حذف المستخدمين",
+                "deleteshowEmsPrimaryFreqCtrl": "delete一次调频API",
 
                 "downloadTemplate": "تنزيل القالب",
                 "editFileNameOrRemark": "تعديل اسم الملف أو الملاحظة",
                 "exportExcel": "تصدير إكسل",
                 "fileIntegrityCheck": "فحص تامة الملف",
                 "fileUploadExample": "مثال على تحميل الملف",
+                "findshowEmsPrimaryFreqCtrl": "find一次调频API",
 
                 "getAPIByID": "الحصول على تفاصيل API",
                 "getAPIList": "الحصول على قائمة API",
@@ -278,6 +282,7 @@
                 "importExcel": "استيراد إكسل",
                 "installPlugin": "تثبيت المكون",
                 "jwtAddedToBlackList": "إضافة JWT إلى القائمة السوداء (الخروج، مطلوب)",
+                "listshowEmsPrimaryFreqCtrl": "list一次调频API",
 
                 "mergeFileAfterUpload": "دمج الملف بعد التحميل",
                 "modifyUserRole": "تعديل دور المستخدم (مطلوب)",
@@ -306,10 +311,11 @@
                 "updateExportTemplate": "تحديث قالب التصدير",
                 "updateMenu": "تحديث القائمة",
                 "updateRole": "تحديث معلومات الدور",
+                "updateshowEmsPrimaryFreqCtrl": "update一次调频API",
                 "userLoginRequired": "تسجيل دخول المستخدم (مطلوب)",
                 "userRegistration": "تسجيل المستخدم",
                 "tableDataInitFail": "فشل في تهيئة بيانات الجدول"
-            },
+            ,"batchshowEmsOtherApi":"batchOtherApi","updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi","addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi"},
             "group": {
                 "announcement": "الإعلان",
                 "api": "API",
@@ -327,11 +333,17 @@
                 "partialUpload": "تحميل جزئي",
                 "resumeUpload": "استئناف التحميل (إصدار المكون)",
                 "role": "دور",
+                "showEmsPrimaryFreqCtrl": "快速调频",
+                "staticVarGenerator":"无功调压",
+                "sysInertiaSupport": "惯量支撑",
+                "ActivePowerCtrl": "有功控制",
+                "ReactivePowerCtrl": "无功控制",
+                "SocKeep": "备电功能",
                 "systemService": "خدمات النظام",
                 "systemUser": "مستخدم النظام",
                 "tableTemplate": "قالب الجدول",
                 "templateConfiguration": "تكوين القالب"
-            }
+            ,"showEmsOtherApi":"OtherApi"}
         },
         "authority": {
             "normalUserSubRole": "عادي المستخدم subrole",
@@ -383,6 +395,13 @@
             "resume": "استئناف من نقطة توقف (إصدار مكون إضافي)",
             "roleManage": "إدارة الأدوار",
             "serverStatus": "حالة الخادم",
+            "showEmsPrimaryFreqCtrl": "快速调频",
+            "staticVarGenerator":"无功调压",
+            "sysInertiaSupport": "惯量支撑",
+            "ActivePowerCtrl": "有功控制",
+            "ReactivePowerCtrl": "无功控制",
+            "SocKeep": "备电功能",
+            "ctrlMode": "控制策略",
             "system": "أعدادات النظام",
             "systemTools": "أدوات النظام",
             "tableTemplate": "قالب الجدول",
@@ -392,7 +411,7 @@
             "buttonKey": "مفتاح الزر",
             "buttonComment": "تعليق الزر",
             "menuID": "معرف القائمة"
-        }
+        ,"showEmsOtherApi":"OtherApi"}
     },
     "announcement": {
         "publicAnnouncementAPI": "معلومات واجهة الإعلان التي لا تتطلب مصادقة",

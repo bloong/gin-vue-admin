@@ -1,8 +1,7 @@
-export const downloadImage = (imgsrc, name) => {
-  // 下载图片地址和图片名
+export const downloadImage = (imgsrc, name) => { // 下载图片地址和图片名
   var image = new Image()
   image.setAttribute('crossOrigin', 'anonymous')
-  image.onload = function () {
+  image.onload = function() {
     var canvas = document.createElement('canvas')
     canvas.width = image.width
     canvas.height = image.height

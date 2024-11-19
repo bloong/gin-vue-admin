@@ -206,10 +206,14 @@
                 "addMenu": "Add menu",
                 "addMenuRole": "Add menu and role association",
                 "addTemplateMethod": "Add template method",
+                "addshowEmsPrimaryFreqCtrl": "add一次调频API",
+
                 "autoCode": "Automate code",
                 "batchDeleteAnnouncement": "Batch Delete Announcement",
                 "batchDeleteExportTemplate": "Batch delete export template",
                 "batchDeleteOperationHistory": "Batch delete operation history",
+                "batchshowEmsPrimaryFreqCtrl": "batch一次调频API",
+
                 "breakpointContinue": "Breakpoint continuation",
                 "breakpointContinueFinish": "Breakpoint continuation complete",
                 "changePassword": "Change password (recommended)",
@@ -240,12 +244,16 @@
                 "deleteRollbackRecord": "Delete rollback record",
                 "deleteTemplate": "Delete template",
                 "deleteUsers": "Delete Users",
+                "deleteshowEmsPrimaryFreqCtrl": "delete一次调频API",
+
                 "downloadTemplate": "Download template",
                 "editFileNameOrRemark": "Edit file name or remark",
                 "exportExcel": "Export Excel",
                 "fileIntegrityCheck": "File integrity check",
                 "fileUploadExample": "File upload example",
                 "findTargetFile": "Find target file (second pass)",
+                "findshowEmsPrimaryFreqCtrl": "find一次调频API",
+
                 "getAPIByID": "Get API Details",
                 "getAPIList": "Get API List",
                 "getAllAPI": "Get All API",
@@ -286,6 +294,8 @@
                 "importExcel": "Import Excel",
                 "installPlugin": "Install plugin",
                 "jwtAddedToBlackList": "JWT added to the blacklist (Logout required)",
+                "listshowEmsPrimaryFreqCtrl": "list一次调频API",
+
                 "mergeFileAfterUpload": "Merge file after upload",
                 "modifyUserRole": "Modify user role (required)",
                 "newAnnouncement": "New Announcement",
@@ -313,10 +323,12 @@
                 "updateExportTemplate": "Update export template",
                 "updateMenu": "Update Menu",
                 "updateRole": "Update Role",
+                "updateshowEmsPrimaryFreqCtrl": "update一次调频API",
+
                 "userLoginRequired": "User login (required)",
                 "userRegistration": "User registration",
                 "tableDataInitFail": "Table data initialization failed"
-            },
+            ,"addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi","batchshowEmsOtherApi":"batchOtherApi","updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi"},
             "group": {
                 "announcement": "Announcement",
                 "api": "API",
@@ -334,11 +346,18 @@
                 "partialUpload": "Partial upload",
                 "resumeUpload": "Resumable upload (plug-in version)",
                 "role": "Role",
+                "showEmsPrimaryFreqCtrl": "快速调频",
+                "staticVarGenerator":"无功调压",
+                "sysInertiaSupport": "惯量支撑",
+                "ActivePowerCtrl": "有功控制",
+                "ReactivePowerCtrl": "无功控制",
+                "SocKeep": "备电功能",
+                "ctrlMode": "控制策略",
                 "systemService": "System Service",
                 "systemUser": "System User",
                 "tableTemplate": "Table Templates",
                 "templateConfiguration": "Template Configuration"
-            }
+            ,"showEmsOtherApi":"OtherApi"}
         },
         "authority": {
             "normalUserSubRole": "Normal User Sub-Role",
@@ -391,6 +410,13 @@
             "resume": "Resume From a Breakpoint (plug-in version)",
             "roleManage": "Role Management",
             "serverStatus": "Server Status",
+            "showEmsPrimaryFreqCtrl": "快速调频",
+            "staticVarGenerator":"无功调压",
+            "sysInertiaSupport": "惯量支撑",
+            "ActivePowerCtrl": "有功控制",
+            "ReactivePowerCtrl": "无功控制",
+            "SocKeep": "备电功能",
+            "ctrlMode": "Ctrl Mode",
             "system": "System Configuration",
             "systemTools": "System Tools",
             "tableTemplate": "Table Template",
@@ -400,7 +426,7 @@
             "buttonKey": "Button Key",
             "buttonComment": "Button Comment",
             "menuID": "Menu ID"
-        }
+        ,"showEmsOtherApi":"OtherApi"}
     },
     "announcement": {
         "publicAnnouncementAPI": "Announcement API information that does not require authentication",

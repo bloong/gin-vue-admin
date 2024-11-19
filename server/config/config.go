@@ -9,6 +9,8 @@ type Server struct {
 	Email     Email   `mapstructure:"email" json:"email" yaml:"email"`
 	System    System  `mapstructure:"system" json:"system" yaml:"system"`
 	Captcha   Captcha `mapstructure:"captcha" json:"captcha" yaml:"captcha"`
+	Consul    Consul  `mapstructure:"consul" json:"consul" yaml:"consul"`
+
 	// auto
 	AutoCode Autocode `mapstructure:"autocode" json:"autocode" yaml:"autocode"`
 	// gorm
