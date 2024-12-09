@@ -1126,4 +1126,4 @@
       }
     }
   }
-,"showEms":{"OtherApi":{"Test":"test"}}}
+,"showEms":{"OtherApi":{"Test":"test"},"FaultCode":{"FaultID":"故障ID","FaultLevel":"故障等级","FaultDescription":"故障描述","Solution":"解决方案"},"SerialPortManagement":{"SerialPortName":"串口名称","Usage":"用途","BaudRate":"波特率","DataBits":"数据位","Parity":"校验位","StopBits":"停止位"},"NetworkPortManagement":{"Port":"网口","Enabled":"启用","DHCP":"DHCP","IP":"IP","Netmask":"子网掩码","Gateway":"网关","DNS1":"DNS1","DNS2":"DNS2"},"DITable":{"InterfaceName":"接口","RealStatus":"实时状态","UseFor":"用途"},"OperationSetting":{"Interface":"接口","DOInitialStatus":"初始状态","Function":"功能","ActionMode":"动作方式","PulseDuration":"脉冲持续时间"}}}

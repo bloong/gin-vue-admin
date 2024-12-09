@@ -109,6 +109,8 @@ import {
   SetConsulKey,
   SetJsonfile,
   GetJsonfile,
+  GetRedisKey,
+  SetRedisKey
 } from "@/api/showEms/sysOtherApi";
 
 export default defineComponent({
@@ -198,11 +200,15 @@ export default defineComponent({
             return;
           }
 
-          state.consul.key = "common/soc_dn_limit";
+         // state.consul.key = "common/soc_dn_limit";
+
+          state.consul.key = "cde";
+
           state.consul.value = state.formData.input_soc_L;
-          const response_input_soc_L = await SetConsulKey(
+          const response_input_soc_L = await SetRedisKey(
             JSON.stringify(state.consul)
           );
+ 
           if (response_input_soc_L.code === 0) {
           } else {
             initFormData();
@@ -248,15 +254,16 @@ export default defineComponent({
         //   return;
         // }
 
-        const response_input_soc_H = await GetConsulKey({ KEY: "common/soc_up_limit" });
-
+        //const response_input_soc_H = await GetConsulKey({ KEY: "common/soc_up_limit" });
+       const response_input_soc_H = await GetRedisKey({ KEY: "aaa" });
+ 
         if (response_input_soc_H.code === 0) {
           state.formData.input_soc_H = response_input_soc_H.data;
         } else {
           state.formData.input_soc_H = "";
         }
 
-        const response_input_soc_L = await GetConsulKey({ KEY: "common/soc_dn_limit" });
+       const response_input_soc_L = await GetConsulKey({ KEY: "common/soc_dn_limit" });
 
         if (response_input_soc_L.code === 0) {
           state.formData.input_soc_L = response_input_soc_L.data;

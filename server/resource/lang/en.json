@@ -328,7 +328,7 @@
                 "userLoginRequired": "User login (required)",
                 "userRegistration": "User registration",
                 "tableDataInitFail": "Table data initialization failed"
-            ,"addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi","batchshowEmsOtherApi":"batchOtherApi","updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi"},
+            ,"addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi","batchshowEmsOtherApi":"batchOtherApi","updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi","updateshowEmsFaultCode":"update故障码","findshowEmsFaultCode":"find故障码","listshowEmsFaultCode":"list故障码","addshowEmsFaultCode":"add故障码","deleteshowEmsFaultCode":"delete故障码","batchshowEmsFaultCode":"batch故障码","deleteshowEmsSerialPortManagement":"delete串口","batchshowEmsSerialPortManagement":"batch串口","updateshowEmsSerialPortManagement":"update串口","findshowEmsSerialPortManagement":"find串口","listshowEmsSerialPortManagement":"list串口","addshowEmsSerialPortManagement":"add串口","addshowEmsNetworkPortManagement":"add网口管理","deleteshowEmsNetworkPortManagement":"delete网口管理","batchshowEmsNetworkPortManagement":"batch网口管理","updateshowEmsNetworkPortManagement":"update网口管理","findshowEmsNetworkPortManagement":"find网口管理","listshowEmsNetworkPortManagement":"list网口管理","addshowEmsDITable":"add接口信息","deleteshowEmsDITable":"delete接口信息","batchshowEmsDITable":"batch接口信息","updateshowEmsDITable":"update接口信息","findshowEmsDITable":"find接口信息","listshowEmsDITable":"list接口信息","listshowEmsOperationSetting":"listDO设置","addshowEmsOperationSetting":"addDO设置","deleteshowEmsOperationSetting":"deleteDO设置","batchshowEmsOperationSetting":"batchDO设置","updateshowEmsOperationSetting":"updateDO设置","findshowEmsOperationSetting":"findDO设置"},
             "group": {
                 "announcement": "Announcement",
                 "api": "API",
@@ -357,7 +357,7 @@
                 "systemUser": "System User",
                 "tableTemplate": "Table Templates",
                 "templateConfiguration": "Template Configuration"
-            ,"showEmsOtherApi":"OtherApi"}
+            ,"showEmsOtherApi":"OtherApi","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"管理管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"DI状态","showEmsOperationSetting":"DO设置"}
         },
         "authority": {
             "normalUserSubRole": "Normal User Sub-Role",
@@ -426,7 +426,10 @@
             "buttonKey": "Button Key",
             "buttonComment": "Button Comment",
             "menuID": "Menu ID"
-        ,"showEmsOtherApi":"OtherApi"}
+        ,"showEmsOtherApi":"OtherApi"
+        ,
+        "showEmssystemMangage":"系统管理",
+        "showEmsHistoryMangage":"历史数据","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"串口管理","showEmsNetworkPortManager":"网口管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"DI状态","showEmsOperationSetting":"DO设置"}
     },
     "announcement": {
         "publicAnnouncementAPI": "Announcement API information that does not require authentication",

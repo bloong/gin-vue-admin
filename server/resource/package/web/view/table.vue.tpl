@@ -618,21 +618,14 @@ getDataSourceFunc()
           {{- end }}
         {{- end }}
         {{- end }}
-<<<<<<< HEAD
+
         <el-table-column align="left" :label="t('general.operations')" fixed="right" min-width="240">
           <template #default="scope">
             <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.info"{{ end }} type="primary" link class="table-button" @click="getDetails(scope.row)"><el-icon style="margin-right: 5px"><InfoFilled /></el-icon>{{"{{"}}t('general.desc'){{"}}"}}</el-button>
             <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.edit"{{ end }} type="primary" link icon="edit" class="table-button" @click="update{{.StructName}}Func(scope.row)">{{"{{"}}t('general.change'){{"}}"}}</el-button>
             <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.delete"{{ end }} type="primary" link icon="delete" @click="deleteRow(scope.row)">{{"{{"}}t('general.delete'){{"}}"}}</el-button>
           </template>
-=======
-        <el-table-column align="left" label="操作" fixed="right" min-width="240">
-            <template #default="scope">
-            <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.info"{{ end }} type="primary" link class="table-button" @click="getDetails(scope.row)"><el-icon style="margin-right: 5px"><InfoFilled /></el-icon>查看</el-button>
-            <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.edit"{{ end }} type="primary" link icon="edit" class="table-button" @click="update{{.StructName}}Func(scope.row)">编辑</el-button>
-            <el-button {{ if $global.AutoCreateBtnAuth }}v-auth="btnAuth.delete"{{ end }} type="primary" link icon="delete" @click="deleteRow(scope.row)">删除</el-button>
-            </template>
->>>>>>> origin/main
+
         </el-table-column>
         </el-table>
         <div class="gva-pagination">
@@ -650,11 +643,7 @@ getDataSourceFunc()
     <el-drawer destroy-on-close size="800" v-model="dialogFormVisible" :show-close="false" :before-close="closeDialog">
        <template #header>
               <div class="flex justify-between items-center">
-<<<<<<< HEAD
                 <span class="text-lg">{{"{{"}}type==='create'?t('general.add'):t('general.edit'){{"}}"}}</span>
-=======
-                <span class="text-lg">{{"{{"}}type==='create'?'新增':'编辑'{{"}}"}}</span>
->>>>>>> origin/main
                 <div>
                   <el-button type="primary" @click="enterDialog">{{"{{"}}t('general.confirm'){{"}}"}}</el-button>
                   <el-button @click="closeDialog">{{"{{"}}t('general.close'){{"}}"}}</el-button>
@@ -1277,10 +1266,8 @@ defineOptions({
 </script>
 <style>
 </style>
-<<<<<<< HEAD
-{{- end}}
-=======
+< 
 {{- end }}
 
 {{- end }}
->>>>>>> origin/main
+ 

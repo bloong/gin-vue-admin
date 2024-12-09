@@ -162,3 +162,32 @@ export const GetJsonfile = () => {
     method: 'GET'
   })
 }
+
+// GetRedisKey 获取RedisKey
+// @Tags OtherApi
+// @Summary 获取RedisKey
+// @accept application/json
+// @Produce application/json
+// @Success 200 {object} response.Response{data=object,msg=string} "成功"
+// @Router /OtherApiSt/GetRedisKey [GET]
+export const GetRedisKey = (params) => {
+  return service({
+    url: '/OtherApiSt/GetRedisKey',
+    method: 'GET',
+    params
+  })
+}
+// SetRedisKey 设置RedisKey
+// @Tags OtherApi
+// @Summary 设置RedisKey
+// @accept application/json
+// @Produce application/json
+// @Success 200 {object} response.Response{data=object,msg=string} "成功"
+// @Router /OtherApiSt/SetRedisKey [PUT]
+export const SetRedisKey = (data) => {
+  return service({
+    url: '/OtherApiSt/SetRedisKey',
+    method: 'PUT',
+    data
+  })
+}

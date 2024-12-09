@@ -324,7 +324,7 @@
         "userLoginRequired": "用戶登錄(必選)",
         "userRegistration": "用戶註冊",
         "tableDataInitFail": "表數據初始化失敗"
-      ,"updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi","addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi","batchshowEmsOtherApi":"batchOtherApi"},
+      ,"updateshowEmsOtherApi":"updateOtherApi","findshowEmsOtherApi":"findOtherApi","listshowEmsOtherApi":"listOtherApi","addshowEmsOtherApi":"addOtherApi","deleteshowEmsOtherApi":"deleteOtherApi","batchshowEmsOtherApi":"batchOtherApi","addshowEmsFaultCode":"add故障码","deleteshowEmsFaultCode":"delete故障码","batchshowEmsFaultCode":"batch故障码","updateshowEmsFaultCode":"update故障码","findshowEmsFaultCode":"find故障码","listshowEmsFaultCode":"list故障码","addshowEmsSerialPortManagement":"add串口","deleteshowEmsSerialPortManagement":"delete串口","batchshowEmsSerialPortManagement":"batch串口","updateshowEmsSerialPortManagement":"update串口","findshowEmsSerialPortManagement":"find串口","listshowEmsSerialPortManagement":"list串口","deleteshowEmsNetworkPortManagement":"delete网口管理","batchshowEmsNetworkPortManagement":"batch网口管理","updateshowEmsNetworkPortManagement":"update网口管理","findshowEmsNetworkPortManagement":"find网口管理","listshowEmsNetworkPortManagement":"list网口管理","addshowEmsNetworkPortManagement":"add网口管理","addshowEmsDITable":"add接口信息","deleteshowEmsDITable":"delete接口信息","batchshowEmsDITable":"batch接口信息","updateshowEmsDITable":"update接口信息","findshowEmsDITable":"find接口信息","listshowEmsDITable":"list接口信息","deleteshowEmsOperationSetting":"deleteDO设置","batchshowEmsOperationSetting":"batchDO设置","updateshowEmsOperationSetting":"updateDO设置","findshowEmsOperationSetting":"findDO设置","listshowEmsOperationSetting":"listDO设置","addshowEmsOperationSetting":"addDO设置"},
       "group": {
         "announcement": "公告",
         "api": "API",
@@ -353,7 +353,7 @@
         "systemUser": "系統用戶",
         "tableTemplate": "表格模板",
         "templateConfiguration": "模板配置"
-      ,"showEmsOtherApi":"OtherApi"}
+      ,"showEmsOtherApi":"OtherApi","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"串口管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"接口信息","showEmsOperationSetting":"DO设置"}
     },
     "authority": {
       "normalUserSubRole": "普通用戶子角色",
@@ -422,7 +422,9 @@
       "buttonKey": "按鈕關鍵key",
       "buttonComment": "按鈕備註",
       "menuID": "菜單ID"
-    ,"showEmsOtherApi":"OtherApi"}
+    ,"showEmsOtherApi":"OtherApi",
+    "showEmssystemMangage":"系统管理",
+    "showEmsHistoryMangage":"历史数据","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"串口管理","showEmsNetworkPortManager":"网口管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"DI状态","showEmsOperationSetting":"DO设置"}
   },
   "announcement": {
     "publicAnnouncementAPI": "不需要鑒權的公告接口信息",

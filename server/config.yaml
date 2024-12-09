@@ -1,9 +1,16 @@
+aliyun-oss:
+    endpoint: yourEndpoint
+    access-key-id: yourAccessKeyId
+    access-key-secret: yourAccessKeySecret
+    bucket-name: yourBucketName
+    bucket-url: yourBucketUrl
+    base-path: yourBasePath
 autocode:
     web: web/src
     root: /home/ub2204/ems/gin-vue-admin
     server: server
     module: github.com/flipped-aurora/gin-vue-admin/server
-    ai-path: ""
+    ai-path: https://ai.gin-vue-admin.com/{FUNC}/bloong/89b6a48e-de66-485d-a04d-90dad802688c
 aws-s3:
     bucket: xxxxx-10005608
     region: ap-shanghai
@@ -90,6 +97,14 @@ language:
 local:
     path: uploads/file
     store-path: uploads/file
+minio:
+    endpoint: yourEndpoint
+    access-key-id: yourAccessKeyId
+    access-key-secret: yourAccessKeySecret
+    bucket-name: yourBucketName
+    use-ssl: false
+    base-path: ""
+    bucket-url: http://host:9000/yourBucketName
 mongo:
     coll: ""
     options: ""
@@ -169,27 +184,6 @@ qiniu:
     secret-key: ""
     use-https: false
     use-cdn-domains: false
-
-# minio oss configuration
-minio:
-  endpoint: yourEndpoint
-  access-key-id: yourAccessKeyId
-  access-key-secret: yourAccessKeySecret
-  bucket-name: yourBucketName
-  use-ssl: false
-  base-path: ""
-  bucket-url: "http://host:9000/yourBucketName"
-
-# aliyun oss configuration
-aliyun-oss:
-    endpoint: yourEndpoint
-    access-key-id: yourAccessKeyId
-    access-key-secret: yourAccessKeySecret
-    bucket-name: yourBucketName
-    bucket-url: yourBucketUrl
-    base-path: yourBasePath
-
-# tencent cos configuration
 redis:
     name: ""
     addr: 127.0.0.1:6379
@@ -232,7 +226,7 @@ system:
     iplimit-count: 15000
     iplimit-time: 3600
     use-multipoint: false
-    use-redis: false
+    use-redis: true
     use-mongo: false
     use-strict-auth: false
 tencent-cos:

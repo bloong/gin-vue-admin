@@ -80,10 +80,4 @@ type {{.StructName}} struct {
 func ({{.StructName}}) TableName() string {
     return "{{.TableName}}"
 }
-<<<<<<< HEAD
-=======
-{{ end }}
-
-
->>>>>>> origin/main
 {{ end }}

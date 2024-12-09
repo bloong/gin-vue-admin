@@ -74,36 +74,48 @@ func (OtherApiStService *OtherApiService) GetOtherApiPublic() {
 
 // GetConsulKey view.systemTools.enterMethodDescription
 // Author [yourname](https://github.com/yourname)
-func (OtherApiStService *OtherApiService)GetConsulKey() (err error) {
+func (OtherApiStService *OtherApiService) GetConsulKey() (err error) {
 	// 请在这里实现自己的业务逻辑
 	db := global.GVA_DB.Model(&showEms.OtherApi{})
-    return db.Error
+	return db.Error
 }
-
 
 // SetConsulKey view.systemTools.enterMethodDescription
 // Author [yourname](https://github.com/yourname)
-func (OtherApiStService *OtherApiService)SetConsulKey() (err error) {
+func (OtherApiStService *OtherApiService) SetConsulKey() (err error) {
 	// 请在这里实现自己的业务逻辑
 	db := global.GVA_DB.Model(&showEms.OtherApi{})
-    return db.Error
+	return db.Error
 }
-
 
 // SetJsonfile view.systemTools.enterMethodDescription
 // Author [yourname](https://github.com/yourname)
-func (OtherApiStService *OtherApiService)SetJsonfile() (err error) {
+func (OtherApiStService *OtherApiService) SetJsonfile() (err error) {
 	// 请在这里实现自己的业务逻辑
 	db := global.GVA_DB.Model(&showEms.OtherApi{})
-    return db.Error
+	return db.Error
 }
-
 
 // GetJsonfile view.systemTools.enterMethodDescription
 // Author [yourname](https://github.com/yourname)
-func (OtherApiStService *OtherApiService)GetJsonfile() (err error) {
+func (OtherApiStService *OtherApiService) GetJsonfile() (err error) {
 	// 请在这里实现自己的业务逻辑
 	db := global.GVA_DB.Model(&showEms.OtherApi{})
-    return db.Error
+	return db.Error
 }
 
+// GetRedisKey 获取RedisKey
+// Author [yourname](https://github.com/yourname)
+func (OtherApiStService *OtherApiService) GetRedisKey() (err error) {
+	// 请在这里实现自己的业务逻辑
+	db := global.GVA_DB.Model(&showEms.OtherApi{})
+	return db.Error
+}
+
+// SetRedisKey 设置RedisKey
+// Author [yourname](https://github.com/yourname)
+func (OtherApiStService *OtherApiService) SetRedisKey() (err error) {
+	// 请在这里实现自己的业务逻辑
+	db := global.GVA_DB.Model(&showEms.OtherApi{})
+	return db.Error
+}

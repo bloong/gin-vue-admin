@@ -3,7 +3,7 @@
         "server": {
             "currentVersion": "当前版本",
             "welcomeTo": "欢迎使用",
-            "joinGroup": "加群方式:微信号：shouzi_1994 QQ群：470239250",
+            "joinGroup": "加群",
             "website": "项目地址",
             "pluginMarket": "插件市场",
             "community": "GVA讨论社区",
@@ -11,8 +11,8 @@
             "frontend": "默认前端文件运行地址",
             "copyright1": "--------------------------------------版权声明--------------------------------------",
             "copyright2": "** 版权所有方：flipped-aurora开源团队 **",
-	        "copyright3": "** 版权持有公司：北京翻转极光科技有限责任公司 **",
-	        "copyright4": "** 剔除授权标识需购买商用授权：https://gin-vue-admin.com/empower/index.html **"
+	        "copyright3": "** 版权持有公司：zbl **",
+	        "copyright4": "** 剔除授权标识需购买**"
         },
         "viper": {
             "modeGinEnvName": "您正在使用gin模式的%s环境名称,config的路径为%s\n",
@@ -332,7 +332,7 @@
                "addshowEmsOtherApi":"add其它Api",
                "deleteshowEmsOtherApi":"delete其它Api",
                "batchshowEmsOtherApi":"batch其它Api",
-               "updateshowEmsOtherApi":"update其它Api"},
+               "updateshowEmsOtherApi":"update其它Api","deleteshowEmsFaultCode":"delete故障码","batchshowEmsFaultCode":"batch故障码","updateshowEmsFaultCode":"update故障码","findshowEmsFaultCode":"find故障码","listshowEmsFaultCode":"list故障码","addshowEmsFaultCode":"add故障码","updateshowEmsSerialPortManagement":"update串口","findshowEmsSerialPortManagement":"find串口","listshowEmsSerialPortManagement":"list串口","addshowEmsSerialPortManagement":"add串口","deleteshowEmsSerialPortManagement":"delete串口","batchshowEmsSerialPortManagement":"batch串口","updateshowEmsNetworkPortManagement":"update网口管理","findshowEmsNetworkPortManagement":"find网口管理","listshowEmsNetworkPortManagement":"list网口管理","addshowEmsNetworkPortManagement":"add网口管理","deleteshowEmsNetworkPortManagement":"delete网口管理","batchshowEmsNetworkPortManagement":"batch网口管理","addshowEmsDITable":"add接口信息","deleteshowEmsDITable":"delete接口信息","batchshowEmsDITable":"batch接口信息","updateshowEmsDITable":"update接口信息","findshowEmsDITable":"find接口信息","listshowEmsDITable":"list接口信息","findshowEmsOperationSetting":"findDO设置","listshowEmsOperationSetting":"listDO设置","addshowEmsOperationSetting":"addDO设置","deleteshowEmsOperationSetting":"deleteDO设置","batchshowEmsOperationSetting":"batchDO设置","updateshowEmsOperationSetting":"updateDO设置"},
             "group": {
                 "announcement": "公告",
                 "api": "API",
@@ -361,7 +361,7 @@
                 "systemUser": "系统用户",
                 "tableTemplate": "表格模板",
                 "templateConfiguration": "模板配置"
-            ,"showEmsOtherApi":"OtherApi"}
+            ,"showEmsOtherApi":"OtherApi","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"串口管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"接口信息","showEmsOperationSetting":"DO设置"}
         },
         "authority": {
             "normalUserSubRole": "普通用户子角色",
@@ -430,7 +430,9 @@
             "buttonKey": "按钮关键key",
             "buttonComment": "按钮备注",
             "menuID": "菜单ID"
-        ,"showEmsOtherApi":"OtherApi"}
+        ,"showEmsOtherApi":"OtherApi",
+        "showEmssystemMangage":"系统管理",
+        "showEmsHistoryMangage":"历史数据","showEmsFaultCode":"故障码","showEmsSerialPortManagement":"串口管理","showEmsNetworkPortManager":"网口管理","showEmsNetworkPortManagement":"网口管理","showEmsDITable":"DI状态","showEmsOperationSetting":"DO设置"}
     },
     "announcement": {
         "publicAnnouncementAPI": "不需要鉴权的公告接口信息",

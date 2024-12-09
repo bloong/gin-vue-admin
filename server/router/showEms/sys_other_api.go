@@ -19,8 +19,10 @@ func (s *OtherApiRouter) InitOtherApiRouter(Router *gin.RouterGroup, PublicRoute
 
 		OtherApiStRouter.GET("GetConsulKey", OtherApiStApi.GetConsulKey)
 		OtherApiStRouter.PUT("SetConsulKey", OtherApiStApi.SetConsulKey)
-		OtherApiStRouter.POST("SetJsonfile", OtherApiStApi.SetJsonfile)
+		OtherApiStRouter.PUT("SetJsonfile", OtherApiStApi.SetJsonfile)
 		OtherApiStRouter.GET("GetJsonfile", OtherApiStApi.GetJsonfile)
+		OtherApiStRouter.GET("GetRedisKey", OtherApiStApi.GetRedisKey)
+		OtherApiStRouter.PUT("SetRedisKey", OtherApiStApi.SetRedisKey)
 	}
 	{
 		OtherApiStRouterWithoutRecord.GET("findOtherApi", OtherApiStApi.FindOtherApi)

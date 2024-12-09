@@ -1,6 +1,7 @@
 package showEms
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -259,8 +260,6 @@ func (OtherApiStApi *OtherApiApi) SetConsulKey(c *gin.Context) {
 		return
 	}
 
-	//ageStr := fmt.Sprintf("%d", *TestStruct.Age)
-
 	valueStr := fmt.Sprintf("%s", ConsulKvStruct.Value)
 
 	// 获取KV存储的值
@@ -368,5 +367,65 @@ func (OtherApiStApi *OtherApiApi) GetJsonfile(c *gin.Context) {
 	global.GVA_LOG.Info("TestStruct NAME " + p.Input12931)
 
 	response.OkWithData(p, c)
+
+}
+
+// GetRedisKey 获取RedisKey
+// @Tags OtherApi
+// @Summary 获取RedisKey
+// @accept application/json
+// @Produce application/json
+// @Param data query showEmsReq.OtherApiSearch true "成功"
+// @Success 200 {object} response.Response{data=object,msg=string} "成功"
+// @Router /OtherApiSt/GetRedisKey [GET]
+func (OtherApiStApi *OtherApiApi) GetRedisKey(c *gin.Context) {
+
+	KEY := c.Query("KEY")
+	redis_key, err := global.GVA_REDIS.Get(context.Background(), KEY).Result()
+
+	if err != nil {
+		global.GVA_LOG.Error("RedisStoreClearError!", zap.Error(err))
+		return
+	}
+
+	response.OkWithData(redis_key, c)
+}
+
+// SetRedisKey 设置RedisKey
+// @Tags OtherApi
+// @Summary 设置RedisKey
+// @accept application/json
+// @Produce application/json
+// @Param data query showEmsReq.OtherApiSearch true "成功"
+// @Success 200 {object} response.Response{data=object,msg=string} "成功"
+// @Router /OtherApiSt/SetRedisKey [PUT]
+func (OtherApiStApi *OtherApiApi) SetRedisKey(c *gin.Context) {
+	// 请添加自己的业务逻辑
+
+	type Data struct {
+		Key   string `json:"Key"`
+		Value string `json:"Value"`
+	}
+
+	var ConsulKvStruct Data
+
+	err := c.ShouldBindJSON(&ConsulKvStruct)
+	if err != nil {
+		response.FailWithMessage(err.Error(), c)
+		return
+	}
+
+	//	logrus.Infof("Received data: %+v", ConsulKvStruct)
+
+	err = global.GVA_REDIS.Set(context.Background(), ConsulKvStruct.Key, ConsulKvStruct.Value, 0).Err()
+
+	if err != nil {
+		global.GVA_LOG.Error("RedisStoreError!", zap.Error(err))
+		return
+	}
+
+	//response.OkWithData("234", c)
+
+	response.OkWithMessage("更新成功", c)
 
 }

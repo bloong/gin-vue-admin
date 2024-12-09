@@ -16,7 +16,12 @@ func initBizRouter(routers ...*gin.RouterGroup) {
 	{
 		showEmsRouter := router.RouterGroupApp.ShowEms
 		showEmsRouter.InitPrimaryFreqCtrlRouter(privateGroup, publicGroup)
-		showEmsRouter.InitEmsToolsRouter(privateGroup, publicGroup) // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
+		showEmsRouter.InitEmsToolsRouter(privateGroup, publicGroup)
 		showEmsRouter.InitOtherApiRouter(privateGroup, publicGroup)
+		showEmsRouter.InitFaultCodeRouter(privateGroup, publicGroup)
+		showEmsRouter.InitSerialPortManagementRouter(privateGroup, publicGroup)
+		showEmsRouter.InitNetworkPortManagementRouter(privateGroup, publicGroup)
+		showEmsRouter.InitDITableRouter(privateGroup, publicGroup) // 占位方法，保证文件可以正确加载，避免go空变量检测报错，请勿删除。
+		showEmsRouter.InitOperationSettingRouter(privateGroup, publicGroup)
 	}
 }
